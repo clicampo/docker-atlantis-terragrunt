@@ -1,8 +1,8 @@
 name: Build and Push to GHCR
 
 on:
-  push:
-    branches: ['release']
+  release:
+    types: [published]
 
 env:
   REGISTRY: ghcr.io
