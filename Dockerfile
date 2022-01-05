@@ -1,4 +1,4 @@
-FROM runatlantis/atlantis:v0.18.0
+FROM runatlantis/atlantis:v0.18.1
 
 LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlantis-terragrunt
 
