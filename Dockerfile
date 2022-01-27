@@ -5,8 +5,8 @@ LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlanti
 ENV TERRAGRUNT_VERSION=v0.36.0 \
     VAULT_VERSION=1.9.2 \
     TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.12.3 \
-    TERRAFORM_VERSION=1.1.2 \
-    DEFAULT_TERRAFORM_VERSION=1.1.2
+    TERRAFORM_VERSION=1.1.4 \
+    DEFAULT_TERRAFORM_VERSION=1.1.4
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
