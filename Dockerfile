@@ -1,12 +1,12 @@
-FROM runatlantis/atlantis:v0.18.1
+FROM runatlantis/atlantis:v0.18.2
 
 LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlantis-terragrunt
 
-ENV TERRAGRUNT_VERSION=v0.35.16 \
+ENV TERRAGRUNT_VERSION=v0.36.0 \
     VAULT_VERSION=1.9.2 \
-    TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.11.0 \
-    TERRAFORM_VERSION=1.1.2 \
-    DEFAULT_TERRAFORM_VERSION=1.1.2
+    TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.12.3 \
+    TERRAFORM_VERSION=1.1.4 \
+    DEFAULT_TERRAFORM_VERSION=1.1.4
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
