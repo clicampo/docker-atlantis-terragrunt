@@ -1,14 +1,14 @@
-FROM runatlantis/atlantis:v0.18.2
+FROM ghcr.io/runatlantis/atlantis:v0.19.2
 
 LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlantis-terragrunt
 
-ENV TERRAGRUNT_VERSION=v0.36.1 \
-    VAULT_VERSION=1.9.3 \
-    TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.12.3 \
-    TERRAFORM_VERSION=1.1.5 \
-    DEFAULT_TERRAFORM_VERSION=1.1.5 \
-    AWS_CLI_VERSION=2.4.17 \
-    GLIBC_VER=2.34-r0
+ENV TERRAGRUNT_VERSION=v0.36.6 \
+  VAULT_VERSION=1.9.3 \
+  TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.14.2 \
+  TERRAFORM_VERSION=1.1.8 \
+  DEFAULT_TERRAFORM_VERSION=1.1.8 \
+  AWS_CLI_VERSION=2.4.17 \
+  GLIBC_VER=2.34-r0
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
