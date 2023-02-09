@@ -28,9 +28,9 @@ LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlanti
 
 ENV TERRAGRUNT_VERSION=v0.43.2 \
   VAULT_VERSION=1.10.1 \
-  DEFAULT_TERRAFORM_VERSION=1.1.9
   TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.16.0 \
   TERRAFORM_VERSION=1.3.8 \
+  DEFAULT_TERRAFORM_VERSION=1.3.8
 
 # AWS CLI v2
 COPY --from=builder /usr/local/aws-cli/ /usr/local/aws-cli/
