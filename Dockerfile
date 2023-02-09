@@ -22,15 +22,15 @@ RUN find /usr/local/aws-cli/v2/current/dist/awscli/botocore/data -name examples-
 FROM alpine:${ALPINE_VERSION}
 
 
-FROM ghcr.io/runatlantis/atlantis:v0.19.8
+FROM ghcr.io/runatlantis/atlantis:v0.22.3
 
 LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlantis-terragrunt
 
-ENV TERRAGRUNT_VERSION=v0.37.4 \
+ENV TERRAGRUNT_VERSION=v0.43.2 \
   VAULT_VERSION=1.10.1 \
-  TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.14.2 \
-  TERRAFORM_VERSION=1.1.9 \
-  DEFAULT_TERRAFORM_VERSION=1.1.9
+  TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.16.0 \
+  TERRAFORM_VERSION=1.3.8 \
+  DEFAULT_TERRAFORM_VERSION=1.3.8
 
 # AWS CLI v2
 COPY --from=builder /usr/local/aws-cli/ /usr/local/aws-cli/
