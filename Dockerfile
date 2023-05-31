@@ -22,7 +22,7 @@ RUN find /usr/local/aws-cli/v2/current/dist/awscli/botocore/data -name examples-
 FROM alpine:${ALPINE_VERSION}
 
 
-FROM ghcr.io/runatlantis/atlantis:v0.22.3
+FROM ghcr.io/runatlantis/atlantis:v0.24.2
 
 LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlantis-terragrunt
 
