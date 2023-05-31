@@ -26,7 +26,7 @@ FROM ghcr.io/runatlantis/atlantis:v0.24.2
 
 LABEL org.opencontainers.image.source=https://github.com/clicampo/docker-atlantis-terragrunt
 
-ENV TERRAGRUNT_VERSION=v0.43.2 \
+ENV TERRAGRUNT_VERSION=v0.45.18 \
   VAULT_VERSION=1.10.1 \
   TERRAGRUNT_ATLANTIS_CONFIG_VERSION=1.16.0 \
   TERRAFORM_VERSION=1.4.6 \
